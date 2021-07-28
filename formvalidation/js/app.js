@@ -13,7 +13,7 @@ submit.addEventListener('click',function(e){
     if(username.value == ''){
         showerror(username,'Username is required');
     }else{
-        showsuccess(username);
+        checklength(username,username.value.length);
     }
 
     //email
@@ -63,4 +63,29 @@ function showerror(input,message){
 function showsuccess(input){
     const formcontrol = input.parentElement;
     formcontrol.className = 'form-control success'; 
+}
+
+//checked required field
+function checkedRequired(inputarrs){
+    inputarrs.forEach(function(inputarr){
+        if(inputarr.value=''){
+            showerror(inputarr,`${getfieldname(inputarr)} is required`);
+        }else{
+            showsuccess(inputarr);
+        }
+    })
+}
+
+function getfieldname(inputarr){
+    return inputarr.id.charAt(0).toUpperCase()+inputarr.id.slice(1);
+}
+
+function checklength(input,min,max){
+    if(input.value.length < min){
+        showerror(input,`${getfieldname(inputarr)} must be at least ${min} characters`);
+    }else if(input.value.length > max){
+        showerror(input,`${getfieldname(inputarr)} must be at least ${max} characters`);
+    }else{
+        showsuccess(input);
+    }
 }
