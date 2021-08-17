@@ -6,9 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Slider</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    
+    <nav>
+        <div>
+            <div class="logo">
+                <img src="user.png" alt="user">
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <button id="toggle" class="toggle">
+            <i class="fas fa-bars fa-2x"></i>
+        </button>
+
+        <h1>My Landing Page</h1>
+        <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+        </p>
+        <button id="open" class="btn">Sign Up</button>
+        
+    </header>
+
+    <div class="container">
+        <h2>What is this landing page???</h2>
+        <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+        </p>
+        <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+        </p>
+
+        <h2>Tell Me More</h2>
+        <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+        </p>
+
+        <h2>Benefits</h2>
+        <ul>
+            <li>Lifetime Access</li>
+            <li>30 Days Money Back</li>
+            <li>Taillored Customer Support</li>
+            <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+            </p>
+        </ul>
+    </div>
+
+    <!-- Start Modal -->
+    <div class="container-modal">
+        <div class="modal">
+            <div class="modal-header">
+                <div class="close">
+                    <button><i class="fas fa-times"></i></button>
+                </div>
+                <h1 class="">Sign Up</h1>
+            </div>
+            
+            <div class="modal-content">
+                <p>Register with us to get offers,support and more..</p>
+                <form action="" class="modal-form">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username" placeholder="Enter your username">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Enter your password">
+                    </div>
+                    <div class="form-group">
+                        <label for="cfmpassword">Confirm Password</label>
+                        <input type="password" name="cfmpassword" id="cfmpassword" placeholder="Confirm password">
+                    </div>
+                    <input type="submit" id="btn" class="submit-btn" value="Submit">
+                </form>
+            </div>
+            
+        </div>
+    </div>
+    <!-- End Modal -->
     <script src="js/app.js" type="text/javascript"></script>
 </body>
 </html>
